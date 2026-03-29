@@ -1,21 +1,53 @@
 # PeasyImage Embed Widget
 
-> Embeddable PeasyImage widgets for any website. Zero dependencies, Shadow DOM isolation, 4 themes (light/dark/sepia/auto).
+> File conversion tools. Embeddable widgets for any website. Zero dependencies, Shadow DOM isolation.
 
 ## Quick Start
 
-Add to any HTML page:
-- Script: <script src="https://cdn.jsdelivr.net/npm/peasy-image-embed@1/dist/embed.min.js"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/peasy-image-embed@1/dist/embed.min.js"></script>
+<div data-peasyimage="ratio" data-slug="example"></div>
+```
+
+## Available Widget Types (9)
+
+- format: `data-peasyimage="format"`
+- tool: `data-peasyimage="tool"`
+- convert: `data-peasyimage="convert"`
+- compare: `data-peasyimage="compare"`
+- glossary: `data-peasyimage="glossary"`
+- gallery: `data-peasyimage="gallery"`
+- guide: `data-peasyimage="guide"`
+- search: `data-peasyimage="search"`
+- ratio (interactive): `data-peasyimage="ratio"`
+
+## Customization
+
+- **Themes**: light, dark, sepia, auto (follows system preference)
+- **Sizes**: compact (280px), default (420px), large (720px)
+- **Styles**: modern, classic
+
+```html
+<div data-peasyimage="ratio" data-slug="example"
+     data-theme="auto" data-size="compact" data-style-variant="modern"></div>
+```
+
+## Integration Methods
+
+1. **Script tag** (recommended): `<script src="https://cdn.jsdelivr.net/npm/peasy-image-embed@1/dist/embed.min.js"></script>`
+2. **iframe**: `https://peasyimage.com/iframe/entity/{slug}/`
+3. **oEmbed**: `https://peasyimage.com/oembed?url={page_url}&format=json`
+4. **Badge**: `https://peasyimage.com/badge/site.svg`
 
 ## Links
 
 - Main site: https://peasyimage.com
 - Widget docs: https://widget.peasyimage.com
-- npm: https://www.npmjs.com/package/peasy-image-embed
-- GitHub: https://github.com/peasytools/peasy-image-embed
-- API: https://peasyimage.com/developers/
+- API documentation: https://peasyimage.com/developers/
+- npm package: https://www.npmjs.com/package/peasy-image-embed
+- GitHub: https://github.com/fyipedia/peasy-image-embed
 
-## Peasy Tools Widget Family
+## Peasy Tools Widget Network
 
 - [PeasyTools Widget](https://widget.peasytools.com)
 - [PeasyPDF Widget](https://widget.peasypdf.com)
