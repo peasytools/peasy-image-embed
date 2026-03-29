@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# PeasyImage Embed Widget
+# Main site: https://peasyimage.com
+# Widget docs: https://widget.peasyimage.com
+# npm: https://www.npmjs.com/package/peasy-image-embed
